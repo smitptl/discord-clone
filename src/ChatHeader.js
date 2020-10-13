@@ -8,7 +8,7 @@ import HelpIcon from '@material-ui/icons/Help';
 import SendIcon from '@material-ui/icons/Send';
 
 
-function ChatHeader() {
+function ChatHeader({ channelName}) {
     return (
         <div className="chatHeader">
             
@@ -16,7 +16,7 @@ function ChatHeader() {
                 <h3><span className="chatHeader__hash">
                     #
                 </span>
-                Test Channel Name
+                {channelName}
                 </h3>
             </div>
             <div className="chatHeader__right">
